@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>CSS Clip Property Example</title>
+    <style>
+        .clipped-image {
+            position: absolute; /* Required for clip to work */
+            /* clip: rect(top, right, bottom, left); */
+            clip: rect(0px, 150px, 80px, 0px);
+            /* This will show from top=0, left=0 to right=150px and bottom=80px */
+        }
+        body {
+            position: relative; /* So absolute is relative to body */
+            height: 200px;
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Image with CSS clip applied (right & bottom)</h2>
+
+    <img class="clipped-image" 
+         src="https://upload.wikimedia.org/wikipedia/commons/7/7e/GUVI_logo.png" 
+         alt="GUVI Logo" />
+
+</body>
+</html>

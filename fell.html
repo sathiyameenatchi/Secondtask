@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Div with Scrollbar</title>
+  <style>
+    body {
+      height: 100vh;
+      margin: 0;
+      position: relative;
+      background-color: #f0f0f0;
+    }
+
+    #myDiv {
+      position: absolute;
+      top: 50px;
+      right: 0;
+      width: 200px;
+      height: 150px;       /* fixed height to enable scrollbar */
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      overflow: auto;       /* enables scrollbar when content overflows */
+      border-radius: 8px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div id="myDiv">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  </div>
+</body>
+</html>
