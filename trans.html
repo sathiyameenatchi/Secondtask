@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Translate Example</title>
+<style>
+  /* Container */
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+
+  /* Box element */
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s ease; /* smooth movement */
+    cursor: pointer;
+  }
+
+  /* Move box when hovered */
+  .box:hover {
+    transform: translate(150px, 50px); /* move 150px right, 50px down */
+  }
+</style>
+</head>
+<body>
+  <h1>CSS 2D Translate Example</h1>
+
+  <p>Hover over the green box to move it:</p>
+
+  <div class="box">Move me</div>
+</body>
+</html>

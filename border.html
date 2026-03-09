@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Div Image Border Example</title>
+<style>
+div {
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    border: 30px solid transparent; /* border width must match slice */
+    
+    /* Image border properties */
+    border-image-source: url("border.png"); /* image file */
+    border-image-slice: 30;                /* slice at 30px */
+    border-image-repeat: stretch;           /* stretch edges to fit */
+}
+</style>
+</head>
+<body>
+
+<div>
+  This div element has an image border.
+</div>
+
+</body>
+</html>
